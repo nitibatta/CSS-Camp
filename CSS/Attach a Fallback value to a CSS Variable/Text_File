@@ -1,0 +1,14 @@
+When using your variable as a CSS property value, 
+you can attach a fallback value that your page will revert to if for some reason it can't get your variable to work.
+
+It could be that someone is using an older browser that hasn't yet adopted CSS Variables, 
+or perhaps their device doesn't support the value you gave the variable. Here's how you do it:
+
+background: var(--penguin-skin, black);
+This will set background to black if there is a problem with your variable.
+
+Note that this can be useful for debugging.
+
+
+Add a fallback value of black to the background property of penguin-top and penguin-bottom classes. 
+This style will be applied because of a typo in the variable name.
